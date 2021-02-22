@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车页面</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/cartlistsass/cartlist.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.jpg" />
+    <script src="./script/cartlist_module.js" type="module"></script>
+</head>
+
+<body>
+    <!-- 购物车 -->
+    <div class="cart">
+        <div class="cart-top">
+            <div class="wrapper">
+                <div class="top-left">
+                    <a href="index1.html"><img src="../src/img/logo.jpg" alt=""></a>
+                    <h2>我的购物车</h2>
+                    <p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+                </div>
+                <div class="top-rig">
+                    <a href="login.html">登录</a>
+                    <span>|</span>
+                    <a href="registry.html">注册</a>
+                </div>
+            </div>
+        </div>
+        <!--包裹购物车-->
+        <div class="cart-wrap" style="display: block;">
+            <div class="cartmain">
+                <div class="cart-head">
+                    <div class="col t-check">
+                        <div class="cart-check">
+                            <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                        </div>
+                    </div>
+                    <div class="col t-img">&nbsp;</div>
+                    <div class="col t-goods">商品名称</div>
+                    <div class="col t-props"></div>
+                    <div class="col t-prices">单价(元)</div>
+                    <div class="col t-quantity">数量</div>
+                    <div class="col t-sum">小计(元)</div>
+                    <div class="col t-action">操作</div>
+                </div>
+                <div id="cart-list">
+                    <div class="cart-item-list">
+                        <div class="cart-tbody">
+                            <!-- 显示购物车列表 -->
+                            <div class="item-list">
+                                <div class="goods_info" style="display: none;">
+                                    <div class="cart-head">
+                                        <div class="col t-check">
+                                            <div class="cart-check">
+                                                <input type="checkbox" checked="" name="" id="" value="" />
+                                            </div>
+                                        </div>
+                                        <div class="col t-img"><img src="../src/img/logo.jpg" alt=""></div>
+                                        <div class="col t-goods good_t_goods">商品xxxxx名称</div>
+                                        <!-- <div class="col t-props"></div> -->
+                                        <div class="col t-prices"> <span></span> 元</div>
+                                        <div class="col t-quantity set_num">
+                                            <span class="qua_del">-</span>
+                                            <input type="text" value="1" oninput="value=value.replace(/[^\d]/g,'')">
+                                            <span class="qua_add">+</span>
+                                        </div>
+                                        <div class="col t-sum"> <span></span> 元</div>
+                                        <div class="col t-action">删除</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="cart-floatbar">
+                <div class="operation">
+                    <a href="list.html">继续购物</a>
+                    <div class="card_total">
+                        <div>共<span class="goods_num">0</span>件商品，已选择<span class="has_checked">0</span>件</div>
+                    </div>
+                </div>
+                <div class="toolbar-right">
+                    <div class="price-sum">
+                        <span class="txt">合计：</span>
+                        <span class="totalprice">0.0</span>
+                        <span class="txt">元</span>
+                    </div>
+                    <div class="submit">去结算</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="footer-top">
+            <div class="footer-ser">
+                <ul>
+                    <li>
+                        <a href="//www.mi.com/service/quick-repair"><em class="iconfont">&#xe629;&nbsp;&nbsp;</em>预约维修服务</a>
+                    </li>
+                    <li>
+                        <a href="//www.mi.com/service/quick-repair"><em class="iconfont">&#xe61f;&nbsp;&nbsp;</em>7天无理由退货</a>
+                    </li>
+                    <li>
+                        <a href="//www.mi.com/service/quick-repair"><em class="iconfont">&#xe606;&nbsp;&nbsp;</em>15天免费换货</a>
+                    </li>
+                    <li>
+                        <a href="//www.mi.com/service/quick-repair"><em class="iconfont">&#xe654;&nbsp;&nbsp;</em>满99元包邮</a>
+                    </li>
+                    <li>
+                        <a href="//www.mi.com/service/quick-repair"><em class="iconfont">&#xe608;&nbsp;&nbsp;</em>520余家售后网点</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-main">
+                <div class="f-left">
+                    <ul>
+                        <p>帮助中心</p>
+                        <li><a href="#">账户管理</a></li>
+                        <li><a href="#">购物指南</a></li>
+                        <li><a href="#">订单操作</a></li>
+                    </ul>
+                    <ul>
+                        <p>帮助中心</p>
+                        <li><a href="#">账户管理</a></li>
+                        <li><a href="#">购物指南</a></li>
+                        <li><a href="#">订单操作</a></li>
+                    </ul>
+                    <ul>
+                        <p>帮助中心</p>
+                        <li><a href="#">账户管理</a></li>
+                        <li><a href="#">购物指南</a></li>
+                        <li><a href="#">订单操作</a></li>
+                    </ul>
+                    <ul>
+                        <p>帮助中心</p>
+                        <li><a href="#">账户管理</a></li>
+                        <li><a href="#">购物指南</a></li>
+                        <li><a href="#">订单操作</a></li>
+                    </ul>
+                    <ul>
+                        <p>帮助中心</p>
+                        <li><a href="#">账户管理</a></li>
+                        <li><a href="#">购物指南</a></li>
+                        <li><a href="#">订单操作</a></li>
+                    </ul>
+                    <ul>
+                        <p>帮助中心</p>
+                        <li><a href="#">账户管理</a></li>
+                        <li><a href="#">购物指南</a></li>
+                        <li><a href="#">订单操作</a></li>
+                    </ul>
+                </div>
+                <div class="f-right">
+                    <h4>400-100-5678</h4>
+                    <p>8:00-18:00（仅收市话费）</p>
+                    <span>人工客服</span>
+                    <div class="rig-bot">
+                        关注小米:
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/wb.png" alt="">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/wx.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bot">
+            <div class="footer_btm w">
+                <img src="./img/logo.jpg" alt="" class="logo">
+                <div class="link_group">
+                    <div class="line_first clear">
+                        <a href="#">小米商城</a><i> | </i>
+                        <a href="#">MIUI</a><i> |</i>
+                        <a href="#">米家</a><i> |</i>
+                        <a href="#">米聊</a><i> |</i>
+                        <a href="#">多看</a><i> |</i>
+                        <a href="#">游戏</a><i> |</i>
+                        <a href="#">政企服务</a><i> |</i>
+                        <a href="#">小米天猫店</a><i> |</i>
+                        <a href="#">小米集团隐私政策</a><i> |</i>
+                        <a href="#">小米公司儿童信息保护规则</a><i> |</i>
+                        <a href="#">小米商城隐私政策</a><i> |</i>
+                        <a href="#">小米商城用户协议</a><i> |</i>
+                        <a href="#">问题反馈</a><i> |</i>
+                        <a href="#">Select Location</a>
+                    </div>
+                    <br>
+                    <p>
+                        &copy;<a href="#">mi.com</a>
+                        <a href="#">京ICP证110507号</a>
+                        <a href="#">京ICP备10046444号</a>
+                        <a href="#">京公网安备11010802020134号</a>
+                        <a href="#">京网文[2020]0276-042号</a>
+                        <br>
+                        <a href="#">（京）网械平台备字（2018）第00005号</a>
+                        <a href="#">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a>
+                        <a href="#">营业执照</a>
+                        <a href="#">医疗器械质量公告</a>
+                        <br> 增值电信业务许可证 网络食品经营备案 京食药网食备202010048 食品经营许可证<br> 违法和不良信息举报电话：171-5104-4404 知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                    </p>
+                    <div class="zhizhao clear">
+                        <a href="#"><img src="https://i1.mifile.cn/f/i/17/site/truste.png" alt=""></a>
+                        <a href="#"><img src="https://s01.mifile.cn/i/v-logo-2.png" alt=""></a>
+                        <a href="#"><img src="https://s01.mifile.cn/i/v-logo-1.png" alt=""></a>
+                        <a href="#"><img src="https://i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png" alt=""></a>
+                        <a href="#"><img src="https://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/51e841bfade5950abbc31c7f0814210d.png" alt=""></a>
+                    </div>
+                    <div class="geyan">
+                        <img src="img/slogan2020.png" alt="">
+                    </div>
+                    <div class="footer_logo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

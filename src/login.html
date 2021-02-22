@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.jpg" />
+    <!-- <link rel="stylesheet" href="../src/css/loginsass/login.css"> -->
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/loginsass/login.css">
+    <script src="../src/script/login_module.js" type="module"></script>
+    <style>
+        .con-bot img {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+        }
+        
+        .con-bot a {
+            background: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h-login">
+        <div class="logo">
+            <img src="https://account.xiaomi.com/static/res/7f6f2f5/account-static/respassport/acc-2014/img/mistore_logo.png" alt="">
+        </div>
+    </div>
+    <div class="main-login">
+        <div class="wrapper">
+            <div class="content-box">
+                <div class="con-title">
+                    <div>账号登陆</div>
+                    <span></span>
+                    <div>扫码登陆</div>
+                </div>
+                <form action="##" onsubmit="return false" method="POST">
+                    <p><input type="text" name="username" placeholder="邮箱/手机号码/小米ID" class="username"></p>
+                    <p><input type="password" name="password" placeholder="密码" class="password"></p>
+                    <p><input type="submit" class="submit" name="submit" value="登录"></p>
+                    <p class="phoneinclude"><a href="registry.html">手机短信登陆/注册</a></p>
+                    <p class="forgetpassword"><a href="registry.html">立即注册</a><span> | </span><a href="#">忘记密码</a></p>
+                </form>
+                <div class="con-bot">
+                    <a href="#"><img src="./img/QQ.png" alt=""></a>
+                    <a href="#"><img src="./img/微博.png" alt=""></a>
+                    <a href="#"><img src="./img/支付宝.png" alt=""></a>
+                    <a href="#"><img src="./img/微信.png" alt=""></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul class="top">
+            <li><a href="">简体</a></li>
+            <li><a href="">繁体</a></li>
+            <li><a href="">English</a></li>
+            <li><a href="">常见问题</a></li>
+            <li><a href="">隐私政策</a></li>
+        </ul>
+        <div class="bottom">小米公司版权所有-京ICP备10046444-<img src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png" alt="">-京ICP证110507号
+            <div>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- 
+    登录的思路：
+        - 点击登录按钮，将用户名和密码传输给后端 - ajax
+        - 后端获取用户名和密码去和数据库里面的数据进行匹配
+        - 后端将匹配的结果返回给前端
+        - 前端显示是否成功的结果
+ -->
